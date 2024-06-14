@@ -4,7 +4,6 @@ export default function Card(props) {
         <div className="card">
                 {props.children}
         </div>
-
     )
     
 }

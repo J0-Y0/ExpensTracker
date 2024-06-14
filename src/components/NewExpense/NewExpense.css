@@ -1,0 +1,24 @@
+.expense-form {
+  padding: 10px;
+  background-color: rgb(93, 92, 91);
+}
+.expense-form form {
+  display: flex;
+  width: 100%;
+  background-color: red;
+  align-items: stretch;
+  justify-content: stretch;
+}
+.expense-form input {
+  padding: 15px;
+  flex-grow: 1;
+}
+.expense-form input:focus {
+  outline: none;
+}
+.expense-form input[type=submit] {
+  background-color: rgb(255, 255, 255);
+}
+.expense-form input[type=submit]:hover {
+  background-color: lightblue;
+}

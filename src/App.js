@@ -1,6 +1,7 @@
 
-import ExpenseItem from "./components/Expense/ExpenseItem";
+import Expense from "./components/ExpenseItem/Expense";
 import Card from "./components/Card";
+import NewExpense from "./components/NewExpense/NewExpense";
 function App() {
   const expenses = [
     { "date": new Date(2022, 1, 1), "amount": 232, "title": "some expense 1" },
@@ -10,9 +11,11 @@ function App() {
   
   return (
     <Card>
+      <NewExpense />
+
       <div className="expense">
         {
-          expenses.map((item) => <ExpenseItem key={item.amount} expense={item} />)
+          expenses.map((item) => <Expense key={item.amount} expense={item} />)
         }
       </div>
       
