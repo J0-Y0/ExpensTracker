@@ -1,10 +1,10 @@
 import "./NewExpense.css"
 import NewExpenseForm from "./NewExpenseForm";
 
-function NewExpense() {
+function NewExpense({ onSave }) {
 
     return (
-        <NewExpenseForm />
+        <NewExpenseForm onSave={onSave} />
     );
 }
 
