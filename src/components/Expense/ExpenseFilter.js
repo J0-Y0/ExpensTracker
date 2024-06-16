@@ -6,19 +6,13 @@ function ExpenseFilter({selected,onFilter,years}) {
     };
     return (  
         <div className = "filter" >
-
+            
+            <h3>Filter by year</h3>
             <select value = {selected}  onChange={handleChange} >
-                            <option  value="all">All Year</option>
-                            { years.map((year) => <option  value={year}>{year}</option>)}
-
+                            <option key="all" value="all">All Year</option>
+                            { years.map((year) => <option key={year}  value={year}>{year}</option>)}
             </select>
-        
         </div>
-
-
-
-
-
     )
 }
 
