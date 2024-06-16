@@ -12,12 +12,14 @@ function App() {
   const [expenses, setExpenses] = useState(initialExpenses)
       
   const handleSave = (data) => {
-    console.log(data)
+
     setExpenses((previousExpense)=>[data,...previousExpense])
   };
 
   return (
+
     <Card>
+      
       <NewExpense onSave={handleSave} />
       <Expense expenses={expenses} />
       

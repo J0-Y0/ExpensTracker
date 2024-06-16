@@ -1,0 +1,18 @@
+.chart{
+    // background-color: aliceblue;
+    display: flex;
+    justify-content: space-between ;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: end;
+}
+.barChart{
+    background: red !important;
+    width: 20px;
+    height: 200px;
+    border: 1px solid rgb(255, 255, 255) !important;
+    
+   &-fill{
+    background-color: rgb(219, 3, 3);
+   } 
+}
