@@ -1,30 +1,52 @@
-.expense-form{
-    padding: 10px;
-    background-color: rgb(93, 92, 91);
-    form{
-        display: flex;
-        width: 100%;
-        background-color: red;
-                        align-items: stretch;
-                        justify-content: stretch;
-
-        
-    };
-    input{
-
-        padding: 15px;
-        flex-grow: 1;
-        &:focus{
-            outline: none;
-        }
-
-    };
-    input[type="submit"]{
-       background-color: rgb(255, 255, 255);
-       &:hover{
-        background-color: lightblue;
-       }
-    }
-
+.expense-form {
+  padding: 20px; /* Increased padding for better spacing */
+  background-color: #122248; /* Dark blue background */
 }
 
+.title {
+  color: #244d79;
+  padding-bottom: 15px;
+}
+
+.expense-form form {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.expense-form input {
+  padding: 12px; /* Reduced padding for a more compact look */
+  flex-grow: 1;
+  border: none; /* Removed border for a cleaner appearance */
+  background-color: #162a4a; /* Darker blue background */
+  color: #ffffff; /* White text color */
+  margin-right: 10px; /* Added margin between inputs */
+  margin-bottom: 10px; /* Added bottom margin for spacing */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+
+  &:focus {
+    outline: none;
+    background-color: #1e365b; /* Darker blue on focus */
+  }
+
+  @media (max-width: 768px) {
+    flex-basis: 100%; /* Take full width on smaller screens */
+    margin-right: 0; /* Remove right margin */
+  }
+}
+
+.expense-form input[type="submit"] {
+  padding: 12px 20px; /* Adjusted padding */
+  background-color: #1e365b; /* Darker blue button */
+  color: #ffffff; /* White text color */
+  border: none; /* Removed border */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background transition */
+
+  &:hover {
+    background-color: #336699; /* Light blue on hover */
+  }
+
+  @media (max-width: 768px) {
+    flex-basis: 100%; /* Take full width on smaller screens */
+  }
+}

@@ -1,44 +1,74 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-.card{
-    background: #000000;
-    height: 100vh;
-    color: rgb(218, 218, 218);
-    padding: 10%;
-    
-.expense{   
-    background: rgb(30, 31, 52) !important;
-    padding: 10px;
-  &-item{
-    background: #2a3d49;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
 
-    margin-bottom: 8px;
-    padding: 5px 10px;
-    font-weight: bold;
-    border-radius: 5px;
-    &:hover{
-      background: #6e6e6e;
-    }
-    &-amount{
-        border: #000000 solid 2px ;
-        padding: 5px 10px;
-        border-radius: 10px;
-        background: #665858;
-    }
+.card {
+  background: #0a192f; /* Dark blue background */
+  color: #ffffff; /* White text color */
+  padding: 15px 10%; /* Padding adjusted for responsive layout */
+}
+
+.expense {
+  background: #0e1a36; /* Slightly lighter blue background */
+  padding: 20px;
+}
+
+.expense-item {
+  background: #162a4a; /* Dark blue background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background: #1e365b; /* Darker blue on hover */
   }
-  &-date{
-    border: #6e3e3e 2px outset;
-    background-color: #665858;
-    padding: 5px;
-    text-align: center;
-    border-radius: 10px;
-    min-width: 100px;
+
+  &-amount {
+    border: 2px solid #0a192f; /* Same as card background */
+    padding: 8px 15px;
+    border-radius: 12px;
+    background: #1e304e; /* Dark blue background */
+    color: #ffffff; /* White text color */
+    font-weight: bold;
   }
 }
+
+.expense-date {
+  border: 2px outset #204060; /* Darker blue border */
+  background-color: #1e304e; /* Dark blue background */
+  padding: 8px;
+  text-align: center;
+  border-radius: 12px;
+  min-width: 120px;
+  color: #ffffff; /* White text color */
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 15px; /* Adjusted padding for smaller screens */
+  }
+
+  .expense {
+    padding: 15px; /* Adjusted padding for smaller screens */
+  }
+
+  .expense-item {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    padding: 12px; /* Reduced padding for a more compact look */
+  }
+
+  .expense-item .expense-amount {
+    margin-top: 8px; /* Added margin between items */
+  }
+
+  .expense-date {
+    margin-top: 8px; /* Added margin between items */
+  }
 }

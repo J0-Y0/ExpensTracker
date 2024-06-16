@@ -40,13 +40,14 @@ export default function NewExpenseForm({ onSave })  {
      }
 
     return (
-        <div className = "expense-form">
+        <div className="expense-form">
+            <h2 className="title">Add new expense</h2>
             <form onSubmit={handleSubmit}>
-            <input key="title"  value={input.title}  onChange={handleChange} type="text" name="title" placeholder="Expanse name" />
-            <input key= "amount" value={input.amount}  onChange={handleChange} type="number" min="1" step="1" name="amount" placeholder="Expanse Amount" />
-                <input key="date" value={input.date} type="date" onChange={handleChange} min='2019-01-01' name="date"
+            <input required key="title"  value={input.title}  onChange={handleChange} type="text" name="title" placeholder="Expanse name" />
+                <input required key= "amount" value={input.amount}  onChange={handleChange} type="number" min="1" step="1" name="amount" placeholder="Expanse Amount" />
+                <input required key="date" value={input.date} type="date" onChange={handleChange} min='2019-01-01' name="date"
                     max='2022-12-31' />
-            <input type="submit"  />
+            <input type="submit" value="Add Expense" />
             </form>
         </div>
         

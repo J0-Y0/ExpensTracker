@@ -11,9 +11,9 @@ export default function ExpenseItem({ expense }) {
     return (
         <div className='expense-item'>
             <ExpenseDate date={ date} />
-            <div>
+            <h3>
                 {title}
-            </div>
+            </h3>
             <div className='expense-item-amount'>$ {amount}</div>
         </div>  
     )

@@ -1,15 +1,23 @@
 .filter {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
-  margin-bottom: 8px;
-  background-color: #232e3a;
+  padding: 15px; /* Increased padding for better spacing */
+  margin-bottom: 12px; /* Slightly increased margin */
+  background-color: #263d74; /* Dark blue background */
 }
+
 .filter select {
-  font-size: 18px;
+  font-size: 18px; /* Slightly reduced font size */
   outline: none;
-  padding: 5px 20px;
-  border-radius: 5px;
-  color: #c6c6d1;
-  background-color: #17222e;
+  padding: 8px 16px; /* Adjusted padding */
+  border-radius: 8px; /* Rounded corners */
+  color: #ffffff; /* White text color */
+  background-color: #162a4a; /* Darker blue background */
+  border: none; /* Removed border */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+  /* Optional: Hover and focus styles */
+}
+.filter select:hover, .filter select:focus {
+  background-color: #1e365b; /* Darker blue on hover/focus */
 }
